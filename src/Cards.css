@@ -1,0 +1,38 @@
+/* src/Cards.css */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  /* 👇 Estas son las líneas que debes añadir */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #646cff; /* Color de acento */
+}
+
+.card h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
